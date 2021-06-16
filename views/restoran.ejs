@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <form method="post" action="/narudzba">
+      <%for (let i=0;i<jela.length;i++){%>
+        <label ><%= jela[i].naziv%> :</label>
+        <input type="checkbox" name="jelo" value="<%= jela[i].naziv%>">
+        <br>
+      <%}%>
+      <input type="submit" value="Submit">
+    </form>
+
+
+  </body>
+</html>
